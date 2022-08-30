@@ -1,148 +1,211 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Email Template</title>
-    <style type="text/css">
-        /* general */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
-        body {
-            margin: 0;
-        }
-        table {
-            border-spacing: 0;
-        }
-        td {
-            padding: 0;
-        }
-        img {
-            border: 0;
-        }
-        h1{
-            font-size: 46px;
-            font-weight: 100;
-            margin: 0;
-            padding-top: 10px;
-            color: #b97100;
-        }
-        h2{
-            font-size: 30px;
-            margin: 0;
-        }
-        h3{
-            font-size: 30px;
-            margin: 0;
-            color: #b97100;
-        }
-        h4{
-            font-size: 16px;
-            font-weight: 200;
-            letter-spacing: 2px;
-            margin: 0;
-        }
-        .wrapper{
-            width: 100%;
-            table-layout: fixed;
-            background-color: #f8eee2;
-        }
-        .main{
-            width: 60%;
-            max-width: 600px;
-            background-color: #fffaf2;
-            font-family: sans-serif;
-            color: #4a4a4a;
-            box-shadow: 0 0 25px rgba(0, 0, 0,.15);
-            /* text-align: center; */
-        }
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Email Template</title>
+        <style type="text/css">
+            /* general */
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+            body {
+                margin: 0;
+            }
+            table {
+                border-spacing: 0;
+            }
+            td {
+                padding: 0;
+            }
+            img {
+                border: 0;
+            }
+            h1{
+                font-size: 46px;
+                font-weight: 100;
+                margin: 0;
+                padding-top: 10px;
+                color: #b97100;
+            }
+            h2{
+                font-size: 30px;
+                margin: 0;
+            }
+            h3{
+                font-size: 30px;
+                margin: 0;
+                color: #b97100;
+            }
+            h4{
+                font-size: 16px;
+                font-weight: 200;
+                letter-spacing: 2px;
+                margin: 0;
+            }
+            .wrapper{
+                width: 100%;
+                table-layout: fixed;
+                background-color: #f8eee2;
+            }
+            .main{
+                width: 60%;
+                max-width: 600px;
+                background-color: #fffaf2;
+                font-family: sans-serif;
+                color: #4a4a4a;
+                box-shadow: 0 0 25px rgba(0, 0, 0,.15);
+                /* text-align: center; */
+            }
 
-        /* button */
-        .button{
-            background-color: #bc2a45;
-            color: #fff;
-            font-size: 16px;
-            text-decoration: none;
-            padding: 20px 20px;
-            border-radius: 10px;
-	    }
+            /* button */
+            .button{
+                background-color: #bc2a45;
+                color: #fff;
+                font-size: 16px;
+                text-decoration: none;
+                padding: 20px 20px;
+                border-radius: 10px;
+            }
 
-        /* columns */
-        .two-columns{
-            font-size: 0;
-		    text-align: center;
-        }
-        .two-columns .column{
-            width: 100%;
-            max-width: 300px;
-            display: inline-block;
-            text-align: center;
-        }
-        .two-columns .sm-column{
-            width: 100%;
-            max-width: 250px;
-            display: inline-block;
-            text-align: left;
-            font-size: 16px;
-        }
-        .two-columns .lg-column{
-            width: 100%;
-            max-width: 350px;
-            display: inline-block;
-            text-align: center;
-            font-size: 16px;
-        }
-        .two-columns .brand{
-            width: 100%;
-            max-width: 220px;
-            display: inline-block;
-            text-align: center;
-            padding: 15px 10px;
-        }
-        .three-columns{
-            font-size: 0;
-            text-align: center;
-        }
-        .three-columns .column{
-            width: 100%;
-            display: inline-block;
-            text-align: left;
-            font-size: 14px;
-            color: #fff;
-            vertical-align: top;
-        }
-        .three-columns .footer-txt{
-            margin: 0;
-            margin-top: 8px;
-            padding-bottom: 15px;
-        }
-        .four-columns{
-            font-size: 0;
-            text-align:center
-        }
-        .four-columns .column{
-            width: 100%;
-            max-width: 150px;
-            display: inline-block;
-            text-align: center;
-        }
-        /* nav-links */
-        .nav-links{
-            font-size: 14px;
-        }
-        .nav-links .link{
-            display: inline-block;
-            padding: 0 10px 0;
+            /* columns */
+            .two-columns{
+                font-size: 0;
+                text-align: center;
+            }
+            .two-columns .column{
+                width: 100%;
+                max-width: 300px;
+                display: inline-block;
+                text-align: center;
+            }
+            .two-columns .sm-column{
+                width: 100%;
+                max-width: 250px;
+                display: inline-block;
+                text-align: left;
+                font-size: 16px;
+            }
+            .two-columns .lg-column{
+                width: 100%;
+                max-width: 350px;
+                display: inline-block;
+                text-align: center;
+                font-size: 16px;
+            }
+            .two-columns .brand{
+                width: 100%;
+                max-width: 220px;
+                display: inline-block;
+                text-align: center;
+                padding: 15px 10px;
+            }
+            .three-columns{
+                font-size: 0;
+                text-align: center;
+            }
+            .three-columns .column{
+                width: 100%;
+                display: inline-block;
+                text-align: left;
+                font-size: 14px;
+                color: #fff;
+                vertical-align: top;
+            }
+            .three-columns .lg{
+                max-width: 250px;
+                padding-left: 25px;
+            }
+            .three-columns .lg p{
+                max-width: 150px;
+            } 
+            .three-columns .md{
+                max-width: 200px;
+            }
+            .three-columns .sm{
+                max-width: 150px;
+            }
+            .three-columns .footer-txt{
+                margin: 0;
+                margin-top: 8px;
+                padding-bottom: 15px;
+            }
+            .four-columns{
+                font-size: 0;
+                text-align:center
+            }
+            .four-columns .column{
+                width: 100%;
+                max-width: 150px;
+                display: inline-block;
+                text-align: center;
+            }
+            /* nav-links */
+            .nav-links{
+                font-size: 14px;
+            }
+            .nav-links .link{
+                display: inline-block;
+                padding: 0 5px 0;
+                color: black;
+                letter-spacing: 1px;
 
-        }
-        .social-links{
-            padding: 15px 0 10px 0;
-        }
-        .social{
-            width: 28px;
-            padding: 0 2px;
-        }
-    </style>
+            }
+            .social-links{
+                padding: 15px 0 10px 0;
+            }
+            .social{
+                width: 28px;
+                padding: 0 2px;
+            }
+
+
+            @media (max-width: 1016px){
+                .two-columns .content{
+                    padding-top: 35px;
+                }
+                .two-columns .logo{
+                    padding-bottom: 10px;
+                }
+                .three-columns .md{
+                    padding-left: 50px;
+                }
+                .three-columns .sm{
+                    text-align: center;
+                    padding: 0 35px;
+                }
+            }
+            /* @media (max-width: 999px){
+                .three-columns .md{
+                    padding-left: 50px;
+                }
+                .three-columns .sm{
+                    text-align: center;
+                    padding: 0 35px;
+                }
+            } */
+            @media (max-width: 776px){
+                .three-columns .lg{
+                    display: block;
+                    padding: 0 0 40px 25px;
+                }
+                .three-columns .lg p{
+                    max-width: 250px;
+                } 
+                .three-columns .md{
+                    display: block;
+                    padding: 0;
+                    padding: 0 0 40px 25px;
+                }
+                .three-columns .sm{
+                    display: block;
+                    text-align: left;
+                    padding: 0;
+                    padding: 0 0 0px 25px;
+                }
+            }
+        </style>
     </head>
+
     <body>
     
         <center class="wrapper">
@@ -159,7 +222,7 @@
                             <tr>
                                 <td class="two-columns">
                                     
-                                    <table class="column">
+                                    <table class="column logo">
                                         <tr>
                                             <td style="padding: 0 0 0 50px">
                                                 <a href="#"><img src="img/logo-music-shop__3_.png" alt="Music Shop" title="Music Shop" width="200px"></a>
@@ -169,7 +232,7 @@
 
                                     <table class="column">
                                         <tr>
-                                            <td class="nav-links" style="padding: 0 0 0 30px"> 
+                                            <td class="nav-links" style="padding: 0 0 0 35px"> 
                                                 <a href=""><p class="link">BRANDS</p></a>
                                                 <a href=""><p class="link">PRODUCTS</p></a>
                                                 <a href=""><p class="link">SALE</p></a>
@@ -187,7 +250,7 @@
                         <table width="100%">
                             <tr>
                                 <td class="two-columns">
-                                    <table class="sm-column">
+                                    <table class="sm-column content">
                                         <tr>
                                             <td style="padding: 0 0 80px 25px;">
                                                 <h4>LABOR DAY SALE</h4>
@@ -324,7 +387,7 @@
                                                     
                                                 </table>
             
-                                                <table class="lg-column">
+                                                <table class="lg-column content">
                                                     <tr>
                                                         <td style="text-align: left; padding: 0 0 25px 20px">
                                                             <h4>BEST CHOICE</h4>
@@ -412,7 +475,7 @@
                             <tr>
                                 <td class="three-columns">
                                     
-                                    <table class="column" style="max-width: 250px; padding: 0 25px;">
+                                    <table class="column lg">
                                         <tr>
                                             <td>
                                                 <img src="img/logo-music-shop__2_.png" alt="" width="150px">
@@ -428,12 +491,12 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="footer-txt" style="font-size: 16px; max-width: 150px;">2022 © All rights reserved</p>
+                                                <p class="footer-txt" style="font-size: 16px;">2022 © All rights reserved</p>
                                             </td>
                                         </tr>
                                     </table>
 
-                                    <table class="column" style="max-width: 225px;" >
+                                    <table class="column md" >
                                         <tr>
                                             <td>
                                                 <p class="footer-txt">PRIVACY POLICY</p>
@@ -443,7 +506,7 @@
                                         </tr>
                                     </table>
 
-                                    <table class="column" style="max-width: 125px;">
+                                    <table class="column sm" >
                                         <tr>
                                             <td>
                                                 <p class="footer-txt">ABOUT</p>
