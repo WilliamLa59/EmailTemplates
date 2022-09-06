@@ -122,9 +122,11 @@
                 text-align: left;
                 
             }
+
             .three-columns .padding{
                 padding: 0 10px
             }
+
             .three-columns .column{
                 width: 100%;
                 display: inline-block;
@@ -155,6 +157,38 @@
                 color: white;
                 font-weight: bold;
                 padding: 8px 0;
+            }
+
+
+            @media (max-width: 1016px){
+
+                .two-columns .column{
+                    padding: 0 0 10px 0 !important;
+                    
+                }
+
+                .two-columns img{
+                    padding: 10px 12px;
+                }
+
+                .three-columns .img-column{
+                    max-width: none;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .three-columns .img{
+                    width: auto;
+                    padding: 10px 0;
+                    text-align: center;
+                    margin: auto;
+                }
+
+                .three-columns .footer{
+                    max-width: none;
+                    display: block;
+                    padding-bottom: 20px;
+                }
             }
         </style>
     </head>
@@ -224,7 +258,7 @@
                             <tr>
                                 <td class="two-columns">
 
-                                    <table class="column" style="padding: 0 0 0 25px">
+                                    <table class="column img-column" style="padding: 0 0 0 25px">
                                         <tr>
                                             <td>
                                                 <img src="img/flowers_1.png" alt="" width="265px">
@@ -278,7 +312,7 @@
                                         </tr>
                                     </table>
 
-                                    <table class="column" style="padding: 0 0 0 15px;">
+                                    <table class="column img-column" style="padding: 0 0 0 15px;">
                                         <tr>
                                             <td>
                                                 <img src="img/FLORIST.png" alt="" width="275px">
@@ -322,43 +356,43 @@
                         <table width="100%">
                             <tr>
                                 <td class="three-columns">
-                                    <table class="column">
+                                    <table class="column img-column">
                                         <tr>
                                             <td>
                                                 <table class="padding">
                                                     <tr>
-                                                        <td><img src="img/product_4.png" alt="" class="img"></td>
+                                                        <td><img src="img/product_4.png" alt="" class="img responsive"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img src="img/product_2.png" alt="" class="img"></td>
+                                                        <td><img src="img/product_2.png" alt="" class="img responsive"></td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="column">
+                                    <table class="column img-column">
                                         <tr>
                                             <td>
                                                 <table class="padding">
                                                     <tr>
-                                                        <td><img src="img/product_3.png" alt="" class="img"></td>
+                                                        <td><img src="img/product_3.png" alt="" class="img responsive"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img src="img/product_1.png" alt="" class="img"></td>
+                                                        <td><img src="img/product_1.png" alt="" class="img responsive"></td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="column">
+                                    <table class="column img-column">
                                         <tr>
                                             <td>
                                                 <table class="padding">
                                                     <tr>
-                                                        <td><img src="img/product_6.png" alt="" class="img"></td>
+                                                        <td><img src="img/product_6.png" alt="" class="img responsive"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img src="img/product_5.png" alt="" class="img"></td>
+                                                        <td><img src="img/product_5.png" alt="" class="img responsive"></td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -436,18 +470,18 @@
                             </tr>
 
                             <tr>
-                                <td class="three-columns footer">
+                                <td class="three-columns ">
                                     
-                                    <table class="column">
+                                    <table class="column footer">
                                         <tr>
                                             <td style="padding: 0 0 0 20px">
-                                                <img src="img/logo.png" alt="" width="200px">
+                                                <h3 style="font-size: 30px">Logo</h3>
                                                 <p class="footer-txt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
                                             </td>
                                         </tr>
                                     </table>
 
-                                    <table class="column">
+                                    <table class="column footer">
                                         <tr>
                                             <td style="padding: 0 0 0 20px">
                                                 <p class="footer-title">Links</p>
@@ -459,7 +493,7 @@
                                         </tr>
                                     </table>
 
-                                    <table class="column">
+                                    <table class="column footer">
                                         <tr>
                                             <td style="padding: 0 0 0 20px">
                                                 <p class="footer-title">Contact</p>
